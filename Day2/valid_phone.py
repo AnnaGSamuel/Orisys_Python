@@ -1,4 +1,3 @@
-'''check country code'''
 import re
 
 phone_no = input("Enter phone number : ")

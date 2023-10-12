@@ -1,6 +1,7 @@
 import re
 
-date = input("Enter a date : ")
-pattern = r"0?[1-9]|1[0-2]/0?[1-9]/\d{4}"
+text = input("Enter a text : ")
+pattern = re.compile(r"((0?[1-9]|1[0-2])/(0[1-9]|[1-2][0-9]|3[0-1])/(\d{4}))")
 
-print(re.findall(pattern,date))
+date = pattern.match(text).group(1)
+print(date)
