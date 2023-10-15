@@ -3,17 +3,19 @@ import tkinter as tk
 def form_string(s):
     global exp
     exp += s
+    entry.insert("end",s)
 def clear_string():
     global exp
     exp = ""
     entry.delete(0,"end")   
 def calculate(exp):
+    entry.insert("end","=")
     beg = 0
     res = 0
     op =0
     for ch in exp:
         if(ch=='+' or ch=='-' or ch=='*' or ch=='/'):
-            op = exp.find(ch,beg)
+            op = exp.find(ch,beg) # 7+3+21
             n = int(exp[beg:op])
             if(beg==0):
                 res = n
@@ -36,7 +38,7 @@ def calculate(exp):
         res *= n
     elif(exp[op]=='/'):
         res /= n
-    entry.insert(0,res)
+    entry.insert("end",res)
 
 window = tk.Tk()
 window.title("Calculator")
