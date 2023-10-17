@@ -1,0 +1,24 @@
+.food-img {
+    border: 1px solid black;
+    border-radius: 10px;
+    max-width: 250px; 
+    height: 250px;
+    margin-top: 200px;
+    background-size: 100%;
+}
+#food1 {
+    background-image: url("../image/food1.jpg");
+    
+   
+}
+#food2 {
+    background-image: url("../image/food2.jpg");
+    margin-left: 250px;
+}
+#food3 {
+    background-image: url("../image/food3.jpg");
+    margin-left: 550px;
+}
+body {
+    background-color: darkgrey;
+}
