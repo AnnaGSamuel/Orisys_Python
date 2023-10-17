@@ -1,23 +1,26 @@
 .food-img {
     border: 1px solid black;
     border-radius: 10px;
-    max-width: 250px; 
+    width: 250px; 
     height: 250px;
-    margin-top: 200px;
     background-size: 100%;
+    margin-top: 200px;
+    display: inline-block; /* Add this line */
+    vertical-align: top; /* Align them at the top */
+    padding: 10px;
+   
 }
 #food1 {
     background-image: url("../image/food1.jpg");
-    
-   
+    margin-left: 150px;
 }
 #food2 {
     background-image: url("../image/food2.jpg");
-    margin-left: 250px;
+    margin-left: 200px;
 }
 #food3 {
     background-image: url("../image/food3.jpg");
-    margin-left: 550px;
+    margin-left: 200px;
 }
 body {
     background-color: darkgrey;
